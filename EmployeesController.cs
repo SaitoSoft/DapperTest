@@ -29,7 +29,7 @@ namespace DapperTest.WebApi.Controllers
             }           
         }
 
-        [HttpPut]
+        [HttpPut("{id}/{salary}")]
         public async Task<IActionResult> Update(int id, decimal salary)
         {
             try
